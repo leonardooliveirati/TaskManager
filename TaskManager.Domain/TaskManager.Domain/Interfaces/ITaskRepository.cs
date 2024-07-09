@@ -11,7 +11,8 @@ namespace TaskManager.Domain.Interfaces
     {
         Task<IEnumerable<TaskEntity>> GetTasksByProjectIdAsync(int projectId);
         Task<TaskEntity> CreateTaskAsync(TaskEntity task);
-        Task UpdateTaskAsync(TaskEntity task, string updatedBy);
+        Task<TaskEntity> GetByIdAsync(int id);
+        Task<TaskEntity> UpdateTaskAsync(TaskEntity task, string updatedBy);
         Task DeleteTaskAsync(int id);
     }
 }

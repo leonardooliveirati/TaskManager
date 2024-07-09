@@ -24,12 +24,30 @@ namespace TaskManager.Service.Services
 
         public async Task<TaskEntity> CreateTaskAsync(TaskEntity task)
         {
+            var tasks = await _taskRepository.GetTasksByProjectIdAsync(task.ProjectId);
+            if (tasks.Count() >= 20)
+            {
+                throw new InvalidOperationException("Cannot add more than 20 tasks to a project.");
+            }
+            
             return await _taskRepository.CreateTaskAsync(task);
         }
 
-        public async Task UpdateTaskAsync(TaskEntity task, string updatedBy)
+        public async Task<TaskEntity> UpdateTaskAsync(TaskEntity task, string updatedBy)
         {
+            var existingTask = await _taskRepository.GetByIdAsync(task.Id);
+            if (existingTask == null)
+            {
+                throw new ArgumentException("Task not found.");
+            }
+
+            if (existingTask.Priority != task.Priority)
+            {
+                throw new InvalidOperationException("Priority cannot be changed after the task is created.");
+            }            
+
             await _taskRepository.UpdateTaskAsync(task, updatedBy);
+            return task;
         }
 
         public async Task DeleteTaskAsync(int id)

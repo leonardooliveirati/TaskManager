@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Api", "TaskManager.Api\TaskManager.Api\TaskManager.Api.csproj", "{C9B93B28-235F-4CBA-92AA-A83E169088E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Api", "TaskManager.Api\TaskManager.Api\TaskManager.Api.csproj", "{C9B93B28-235F-4CBA-92AA-A83E169088E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Domain", "TaskManager.Domain\TaskManager.Domain\TaskManager.Domain.csproj", "{1C6F6E26-9024-4736-A2B7-D18FAD67FF81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Domain", "TaskManager.Domain\TaskManager.Domain\TaskManager.Domain.csproj", "{1C6F6E26-9024-4736-A2B7-D18FAD67FF81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Infrastructure", "TaskManager.Infrastructure\TaskManager.Infrastructure\TaskManager.Infrastructure.csproj", "{7CA393A7-A78B-4B61-A0E9-8369B706AF1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Infrastructure", "TaskManager.Infrastructure\TaskManager.Infrastructure\TaskManager.Infrastructure.csproj", "{7CA393A7-A78B-4B61-A0E9-8369B706AF1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Service", "TaskManager.Service\TaskManager.Service\TaskManager.Service.csproj", "{5FBBE05C-6537-4187-9AD6-F4D6CBF4E56D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Service", "TaskManager.Service\TaskManager.Service\TaskManager.Service.csproj", "{5FBBE05C-6537-4187-9AD6-F4D6CBF4E56D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Tests", "TaskManager.Tests\TaskManager.Tests\TaskManager.Tests.csproj", "{4467F08D-3D7D-43D0-BE5A-E332F7641ABF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Tests", "TaskManager.Tests\TaskManager.Tests.csproj", "{0A34F42D-81EA-4383-AB07-92A89AFF20D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{5FBBE05C-6537-4187-9AD6-F4D6CBF4E56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FBBE05C-6537-4187-9AD6-F4D6CBF4E56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FBBE05C-6537-4187-9AD6-F4D6CBF4E56D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4467F08D-3D7D-43D0-BE5A-E332F7641ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4467F08D-3D7D-43D0-BE5A-E332F7641ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4467F08D-3D7D-43D0-BE5A-E332F7641ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4467F08D-3D7D-43D0-BE5A-E332F7641ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A34F42D-81EA-4383-AB07-92A89AFF20D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A34F42D-81EA-4383-AB07-92A89AFF20D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A34F42D-81EA-4383-AB07-92A89AFF20D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A34F42D-81EA-4383-AB07-92A89AFF20D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

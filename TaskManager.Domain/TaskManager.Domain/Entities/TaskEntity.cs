@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaskManager.Domain.Enum;
 
 namespace TaskManager.Domain.Entities
 {
@@ -13,10 +14,12 @@ namespace TaskManager.Domain.Entities
         public string Title { get; set; }
         public string Description { get; set; }        
         public string Status { get; set; } 
-        public string Priority { get; set; } 
+        public TaskPriority Priority { get; set; } 
         public int ProjectId { get; set; }
         public ProjectEntity Project { get; set; }
         public List<TaskUpdateHistoryEntity> UpdateHistories { get; set; }
         public List<TaskCommentEntity> Comments { get; set; }
+
+
     }
 }

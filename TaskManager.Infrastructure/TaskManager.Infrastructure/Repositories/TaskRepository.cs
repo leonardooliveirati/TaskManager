@@ -48,7 +48,7 @@ namespace TaskManager.Infrastructure.Repositories
             return await _context.Tasks.Where(t => t.ProjectId == projectId).ToListAsync();
         }
 
-        public async Task UpdateTaskAsync(TaskEntity task, string updatedBy)
+        public async Task<TaskEntity> UpdateTaskAsync(TaskEntity task, string updatedBy)
         {
             var existingTask = await _context.Tasks.FindAsync(task.Id);
             if (existingTask == null) throw new KeyNotFoundException("Task not found.");
@@ -66,6 +66,13 @@ namespace TaskManager.Infrastructure.Repositories
 
             _context.TaskUpdateHistory.Add(updateHistory);
             await _context.SaveChangesAsync();
+
+            return existingTask;
+        }
+
+        public async Task<TaskEntity> GetByIdAsync(int id)
+        {
+            return await _context.Tasks.FindAsync(id);
         }
     }
 }
