@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskManager.Domain.Entities;
+﻿using TaskManager.Domain.Entities;
 using TaskManager.Domain.Interfaces;
 
 namespace TaskManager.Service.Services
@@ -29,7 +24,7 @@ namespace TaskManager.Service.Services
             {
                 throw new InvalidOperationException("Cannot add more than 20 tasks to a project.");
             }
-            
+
             return await _taskRepository.CreateTaskAsync(task);
         }
 
@@ -44,7 +39,7 @@ namespace TaskManager.Service.Services
             if (existingTask.Priority != task.Priority)
             {
                 throw new InvalidOperationException("Priority cannot be changed after the task is created.");
-            }            
+            }
 
             await _taskRepository.UpdateTaskAsync(task, updatedBy);
             return task;

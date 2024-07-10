@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskManager.Domain.Enum;
+﻿using TaskManager.Domain.Enum;
 
 namespace TaskManager.Domain.Dtos
 {
@@ -14,7 +9,7 @@ namespace TaskManager.Domain.Dtos
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime DueDate { get; set; }
-        public string Status { get; set; }      
+        public string Status { get; set; }
 
         public TaskPriority Priority { get; set; }
     }

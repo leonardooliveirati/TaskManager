@@ -29,7 +29,7 @@ public class ProjectController : ControllerBase
             });
 
             return Ok(projectDtos);
-            
+
         }
         catch (ArgumentException ex)
         {
@@ -48,7 +48,8 @@ public class ProjectController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<CreateProjectDto>> CreateProject(CreateProjectDto createProjectDto)
     {
-        if (createProjectDto == null) {
+        if (createProjectDto == null)
+        {
             return BadRequest(new { error = "A solicitação é inválida." });
         }
 

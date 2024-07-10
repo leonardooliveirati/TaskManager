@@ -1,12 +1,5 @@
-﻿using Microsoft.Build.Evaluation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskManager.Domain.Entities;
+﻿using TaskManager.Domain.Entities;
 using TaskManager.Domain.Interfaces;
-using TaskManager.Infrastructure.Repositories;
 
 namespace TaskManager.Service.Services
 {
@@ -39,6 +32,6 @@ namespace TaskManager.Service.Services
             }
 
             await _projectRepository.DeleteProjectAsync(projectId);
-        }  
+        }
     }
 }

@@ -1,8 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using TaskManager.Domain.Dtos;
 using TaskManager.Domain.Entities;
 using TaskManager.Domain.Interfaces;
@@ -34,7 +30,7 @@ public class TaskController : ControllerBase
                 Id = task.Id,
                 ProjectId = task.ProjectId,
                 Title = task.Title,
-                Description = task.Description,                
+                Description = task.Description,
                 Status = task.Status,
                 Priority = task.Priority
             });
@@ -69,7 +65,7 @@ public class TaskController : ControllerBase
             {
                 ProjectId = createTaskDto.ProjectId,
                 Title = createTaskDto.Title,
-                Description = createTaskDto.Description,                
+                Description = createTaskDto.Description,
                 Status = "Pending",
                 Priority = createTaskDto.Priority
             };
@@ -81,7 +77,7 @@ public class TaskController : ControllerBase
                 Id = createdTask.Id,
                 ProjectId = createdTask.ProjectId,
                 Title = createdTask.Title,
-                Description = createdTask.Description,                
+                Description = createdTask.Description,
                 Status = createdTask.Status,
                 Priority = createdTask.Priority
             };
@@ -116,7 +112,7 @@ public class TaskController : ControllerBase
             {
                 Id = updateTaskDto.Id,
                 Title = updateTaskDto.Title,
-                Description = updateTaskDto.Description,                
+                Description = updateTaskDto.Description,
                 Status = updateTaskDto.Status
             };
 

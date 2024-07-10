@@ -1,10 +1,7 @@
 ﻿using Moq;
-using Xunit;
 using TaskManager.Domain.Entities;
 using TaskManager.Domain.Interfaces;
 using TaskManager.Service.Services;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 public class ProjectServiceTests
 {
@@ -31,5 +28,5 @@ public class ProjectServiceTests
 
         // Assert
         Assert.Equal(projects, result);
-    }   
+    }
 }

@@ -1,10 +1,7 @@
 ﻿using Moq;
-using Xunit;
 using TaskManager.Domain.Entities;
 using TaskManager.Domain.Interfaces;
 using TaskManager.Service.Services;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 public class TaskServiceTests
 {
@@ -43,5 +40,5 @@ public class TaskServiceTests
 
         // Assert
         Assert.Equal(task, result);
-    }    
+    }
 }
